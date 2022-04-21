@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import React, { useState, } from 'react'
 import './BurgerNav.scss'
 import './burger.scss'
 import { Link } from 'react-router-dom'
@@ -12,12 +11,8 @@ const BurgerNav = () => {
     const [isActive, setIsActive] = useState(false)
 
     const toggleBurgerActive = (e) => {
-        console.log('toggleBurgerActive')
         setIsActive(!isActive)
-        console.log('isActive', isActive)
     }
-
-
 
     return (
         <>

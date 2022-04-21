@@ -5,7 +5,6 @@ import {
 } from "./actionTypes";
 
 export const getBook = (id) => {
-    console.log('getBook action creator', id)
     return {
         type: GET_BOOK,
         payload: id

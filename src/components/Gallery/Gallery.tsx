@@ -17,10 +17,8 @@ const Gallery = () => {
     }, [])
 
     const store = useSelector((store: IStore) => store)
-    // setBooksData(books)
     const books = store.ImageReducer.books
     const isLoading = store.ImageReducer.loadingImages
-    console.log('store gallery page', books, isLoading)
 
     const showSelectHandler = (e) => {
         const value = e.target.value
@@ -31,7 +29,6 @@ const Gallery = () => {
             setSliceStart(value - 6)
             setSliceEnd(value)
         }
-        console.log(e.target.value)
     }
 
     return (

@@ -19,13 +19,10 @@ const ImageReducer = (state = initialState, action) => {
 
     switch (action.type) {
         case SET_IMAGES_IS_LOADING:
-            console.log('SET_IMAGES_IS_LOADING')
             state = { ...state, loadingImages: true };
-            console.log('store call1', state)
             break;
         case GET_IMAGES_SUCCESS:
             state = { ...state, books: action.payload, loadingImages: false }
-            console.log('store call2', state)
             break;
         case GET_IMAGES_FAIL:
             state = {

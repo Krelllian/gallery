@@ -27,7 +27,6 @@ const BookReducer = (state = initialState, action) => {
             state = { ...state, loadingBook: true };
             break;
         case GET_BOOK_SUCCESS:
-            console.log('action', action)
             state = { ...state, book: action.payload, loadingBook: false };
             break;
         case GET_BOOK_FAIL:

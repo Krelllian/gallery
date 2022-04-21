@@ -15,7 +15,6 @@ export const setImagesIsLoading = () => {
 };
 
 export const getImagesSuccess = (images) => {
-    console.log('getImagesSuccess', images)
     return {
         type: GET_IMAGES_SUCCESS,
         payload: images,
