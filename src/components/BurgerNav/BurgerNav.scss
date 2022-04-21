@@ -1,0 +1,36 @@
+.sidebar-nav {
+    color: white;
+    width: 90px;
+    background-color: #12101d;
+    height: 100vh;
+    transition: width 0.3s;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+
+    &.active {
+        width: 240px;
+    }
+}
+
+.sidebar-nav__links {
+    padding-top: 100px;
+    display: grid;
+}
+
+.sidebar-nav__link {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 15px;
+
+    & p {
+        white-space: nowrap;
+        align-self: center;
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+}
