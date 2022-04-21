@@ -15,11 +15,11 @@ function App() {
       <Container style={{ paddingLeft: '95px' }}>
         <Routes>
 
-          {/* <Route path='/' element={
+          <Route path='/' element={
             <>
               <Gallery />
             </>
-          } /> */}
+          } />
 
           <Route path={'/about'} element={
             <>

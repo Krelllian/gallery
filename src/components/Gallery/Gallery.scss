@@ -1,0 +1,44 @@
+.gallery__title {
+    margin-bottom: 25px;
+    margin-top: 5px;
+    width: 50%;
+    text-align: center;
+    background-color: #493f7e;
+    margin-left: 50%;
+    transform: translate(-50%);
+    color: white;
+    padding: 5px 0 15px;
+    border-radius: 5px;
+}
+
+.gallery__card-col {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery__filters {
+    margin-bottom: 25px;
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+.gallery__card {
+    &:hover {
+        filter: contrast(1.2) drop-shadow(2px 4px 6px black);
+    }
+
+    &:hover .gallery__card-details-btn {
+        visibility: visible;
+    }
+}
+
+.gallery__card-details-btn {
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+}
