@@ -23,9 +23,9 @@ const BurgerNav = () => {
                     <span></span>
                 </div>
                 <div className='sidebar-nav__links'>
-                    <Link className='sidebar-nav__link' to="/"><FontAwesomeIcon style={{ width: '50px', height: '50px' }}
+                    <Link className='sidebar-nav__link' to="/" aria-label="gallery"><FontAwesomeIcon style={{ width: '50px', height: '50px' }}
                         icon={faImage}></FontAwesomeIcon>{isActive ? <p>Gallery</p> : ''}</Link>
-                    <Link className='sidebar-nav__link' to="/about"><FontAwesomeIcon style={{ width: '50px', height: '50px' }}
+                    <Link className='sidebar-nav__link' to="/about" aria-label="about me" ><FontAwesomeIcon style={{ width: '50px', height: '50px' }}
                         icon={faAddressCard}></FontAwesomeIcon>{isActive ? <p>Evgeniy Petrov</p> : ''}</Link>
                 </div>
             </div>
