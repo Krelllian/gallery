@@ -55,7 +55,7 @@ const Gallery = () => {
                                         <Col className="gallery__card-col" key={book.id} style={{ marginBottom: '10px' }}>
                                             <Link to={'/card/' + (book.id)}>
                                                 <Card className="gallery__card" style={{ backgroundColor: 'white', width: '150px', height: '200px' }}>
-                                                    <Card.Img src={book.volumeInfo.imageLinks?.thumbnail} style={{ maxHeight: '100%', objectFit: 'cover' }}></Card.Img>
+                                                    <Card.Img src={book.volumeInfo.imageLinks?.thumbnail} alt={`${book.volumeInfo.title} cover`} style={{ maxHeight: '100%', objectFit: 'cover' }}></Card.Img>
                                                     <Button className='gallery__card-details-btn btn-success'>Details</Button>
                                                 </Card>
                                             </Link>

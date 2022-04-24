@@ -30,7 +30,7 @@ const PhotoCard = () => {
                 {isLoading ? <Preloader ml='0' /> :
                     <>
                         <Card.Title>{book?.volumeInfo.title}</Card.Title>
-                        <Card.Img className='book-card__img' src={book?.volumeInfo.imageLinks?.thumbnail} ></Card.Img>
+                        <Card.Img className='book-card__img' src={book?.volumeInfo.imageLinks?.thumbnail} alt={`${book?.volumeInfo.title} cover`} ></Card.Img>
                         <Card.Text dangerouslySetInnerHTML={{ __html: `${book?.volumeInfo?.description || 'No description'}` }}></Card.Text>
                         <Card.Text style={{ fontWeight: 'bold' }}>{`ID:  ${book?.id}`}</Card.Text>
                     </>

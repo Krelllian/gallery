@@ -8,7 +8,7 @@ const About = () => {
         <>
             <h1 className='about-me__title'> About me </h1 >
             <div className='about-me__header'>
-                <Image className='about-me__img' src={require('../../img/IMG_20220105_150240.jpg')}></Image>
+                <Image className='about-me__img' src={require('../../img/IMG_20220105_150240.jpg')} alt='Evgeniy Petrov image'></Image>
                 <h3 className='about-me__name'>Evgeniy Petrov</h3>
                 <p className='about-me__email'>Мy email address: <a href="mailto:itpetrov77@gmail.com">itpetrov77@gmail.com</a></p>
                 <p className='about-me__telegram'>Telegram: <a href='https://t.me/itpetrov77'>@itpetrov77</a></p>
